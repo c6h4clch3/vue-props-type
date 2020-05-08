@@ -17,10 +17,10 @@
   "license": "MIT",
   "dependencies": {
     "@types/chai": "^4.1.7",
-    "@types/mocha": "^5.2.6",
+    "@types/mocha": "^7.0.2",
     "@types/webpack-env": "^1.13.9",
     "chai": "^4.2.0",
-    "mocha": "^6.1.4",
+    "mocha": "^7.1.2",
     "tsc": "^1.20150623.0",
     "typescript": "^3.4.5",
     "vue": "^2.6.10",
