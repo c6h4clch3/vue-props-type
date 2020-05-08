@@ -1,4 +1,4 @@
-import { PropOptions } from 'vue/types/options';
+import { PropOptions } from "vue/types/options";
 
 type Constructor<T> = new (...args: any[]) => T & object;
 type PropsType<T> = Constructor<T> | (() => T);
@@ -10,7 +10,9 @@ export const makePropsType = <T = any>(
   required?: boolean,
   defaultProp?: T extends isPrimitive ? T : () => T,
   validator?: (value: unknown) => value is T
-): PropOptions<T> => {
+): typeof required extends true
+  ? PropOptions<T>
+  : PropOptions<T | undefined> => {
   return {
     type,
     required,
