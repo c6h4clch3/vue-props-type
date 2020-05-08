@@ -17,6 +17,6 @@ export const makePropsType = <T = any>(
     type,
     required,
     default: defaultProp,
-    validator
+    validator,
   };
 };
